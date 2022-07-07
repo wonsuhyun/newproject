@@ -317,6 +317,10 @@ input:checked + .slider:before {
 	width: 270px;
 	text-align: left;
 }
+.main .part3{
+	min-height: 400px;
+	position: relative;
+}
 .main .part3 .ab_area,
 .main .part3 .bg_area{
 	position: absolute;
@@ -343,7 +347,13 @@ input:checked + .slider:before {
 	font-size: 20px;
 	font-weight: 900;
 }
-
+.main .part6{
+	text-align: right;
+}
+.main .part6 .box {
+	background: #fff;
+	text-align: left;
+}
 @media (max-width: 1280px) {
 	.contents{
 		padding-left: 20px;
@@ -352,8 +362,5 @@ input:checked + .slider:before {
 }
 
 @media (max-width: 1040px ) {
-	.contents{
-		padding-left: 20px;
-		padding-right: 20px;
-	}
+
 }
