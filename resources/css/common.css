@@ -8,7 +8,7 @@
 }
 
 .contents {
-	max-width: 1300px;
+	max-width: 1280px;
 	margin: 0 auto;
 	position: relative;
 }
@@ -235,6 +235,7 @@ input:checked + .slider:before {
 .tb {
     display: table;
 }
+
 .tb > div {
     display: table-cell;
     vertical-align: middle;
@@ -316,20 +317,43 @@ input:checked + .slider:before {
 	width: 270px;
 	text-align: left;
 }
-.part3 .swiper-slide{
+.main .part3 .ab_area,
+.main .part3 .bg_area{
+	position: absolute;
+	left: calc( 50% - 640px );
+	top: 0;
+}
+.main .part3 .bg_area {
+	padding-left: 270px;
+}
+.main .part3 .swiper-slide{
 	position: relative;
 }
-.part3 .swiper-slide > div {
+.main .part3 .swiper-slide > div {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
 	background: rgba(0,0,0,0.8);
 	color: #fff;
 }
-.part3 .swiper-slide > div > p {
+.main .part3 .swiper-slide > div > p {
 	font-size: 14px;
 }
-.part3 .swiper-slide > div > p:first-child{
+.main .part3 .swiper-slide > div > p:first-child{
 	font-size: 20px;
 	font-weight: 900;
+}
+
+@media (max-width: 1280px) {
+	.contents{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+@media (max-width: 1040px ) {
+	.contents{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 }
