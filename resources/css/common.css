@@ -198,7 +198,7 @@ input[type=checkbox] + label::after{
 	top: 0;
 }
 input[type=checkbox]:checked + label::after{
-	background:url(../img/checkbos.png) no-repeat center ;
+
 }
 
 input:checked + .slider {
@@ -255,10 +255,20 @@ input:checked + .slider:before {
 }
 .main .banner .swiper-slide {
 	width: 100%;
-	min-height: 1080px;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+	overflow: hidden;
+	position: relative;
+}
+.main .banner .swiper-slide .contents {
+	position: relative;
+}
+.main .banner .swiper-slide img {
+	width: 100%;
+	min-height: 800px;
+}
+.main .banner .swiper-slide .box {
+	position: absolute;
+	left: 0;
+	top: 20%;
 }
 .main .banner .swiper-slide p {
 	color: #fff;
@@ -556,5 +566,10 @@ footer p > span {
 }
 
 @media (max-width: 1040px ) {
-
+	.nav {
+		display: none;
+	}
+	.mobile_pagenation {
+		display: block;
+	}
 }
